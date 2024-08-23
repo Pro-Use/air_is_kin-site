@@ -1,0 +1,24 @@
+title: Timeline Item
+
+fields:
+  item-title:
+    type: text
+    label: Item Title
+  date:
+    type: date
+  
+  content:
+    type: blocks
+    label: Timeline Item Content
+    fieldsets:
+      - text
+      - image
+      - video
+      - audio
+    max: 2
+    min: 1
+  info:
+    type: info
+    label: ''
+    text: Timeline items can have a single text or media (image/video/audio) block or a text block and a media block. Please don't add 2 media blocks
+    

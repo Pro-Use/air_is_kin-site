@@ -1,0 +1,39 @@
+title: Intro/Outro
+
+columns:
+  top:
+    width: 1
+    fields:
+      pagetitle:
+        label: Page Title
+        type: text
+        width: 1/2
+      gap:
+        type: gap
+  left:
+    width: 1/2
+    fields:
+
+      leftcontent:
+        type: blocks
+        label: Left Column Content
+        fieldsets:
+          - heading
+          - text
+          - list
+          - image
+          - video
+          - audio
+  right:
+    width: 1/2
+    fields:
+      rightcontent:
+        type: blocks
+        label: Right Column Content
+        fieldsets:
+          - heading
+          - text
+          - list
+          - image
+          - video
+          - audio

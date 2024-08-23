@@ -1,0 +1,81 @@
+title: Region
+
+tabs:
+  splash:
+    label: Splash Screen Content
+    fields:
+      outline:
+        type: files
+        multiple: false
+        layout: cards
+        image:
+          back: white
+      inner:
+        label: Inner Image
+        type: files
+        multiple: false
+        layout: cards
+      index: fields/region-index
+
+  intro:
+    label: Region Intro Content
+    columns:
+      left:
+        width: 1/2
+        fields:
+          map:
+            type: text
+            label: Map Embed Code
+            icon: code
+      right:
+        width: 1/2
+        fields:
+          rightcontent:
+            type: blocks
+            label: Right Column Content
+            fieldsets:
+              - heading
+              - text
+              - list
+              - image
+              - video
+              - audio
+      
+  declaration:
+    label: Declaration Content
+    fields:
+      declaration-portrait:
+        type: files
+        multiple: false
+        label: Declaration Headshot Image
+      declaration-title:
+        type: text
+        label: Declaration Title
+      declaration-text:
+        type: text
+        label: Declaration Text
+      declaration-audio:
+        type: files
+        multiple: false
+        label: Declaration Audio File
+      declaration-images:
+        type: files
+        label: Declaration Slideshow Images
+        layout: cards
+  
+  timeline:
+    label: Timeline Content
+    sections:
+      items:
+        type: pages
+        template: timeline-item
+      content:
+        type: fields
+        fields:
+          initial:
+            type: select
+            label: Initial timeline item
+            options:
+              type: query
+              query: page.childrenAndDrafts
+      

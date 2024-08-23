@@ -1,0 +1,9 @@
+
+name: Audio-File
+icon: file-audio
+label: "{{ name }}"
+fields:
+  soundfile:
+    type: files
+  name:
+    type: text

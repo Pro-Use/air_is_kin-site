@@ -1,0 +1,6 @@
+title: Regions
+
+sections:
+  regions:
+    type: pages
+    template: region
