@@ -1,0 +1,7 @@
+title: Video Still
+
+accept:
+  mime: image/*
+  type: image
+create:
+  format: webp

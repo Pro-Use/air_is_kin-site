@@ -53,15 +53,34 @@ tabs:
         label: Declaration Title
       declaration-text:
         type: text
-        label: Declaration Text
+        label: Declaration Name
+      delaration-is-slideshow:
+        type: toggle
+        label: Delaration Type
+        text:
+          - Slideshow
+          - Video
       declaration-audio:
         type: files
         multiple: false
         label: Declaration Audio File
+        when:
+          delaration-is-slideshow: false
       declaration-images:
         type: files
         label: Declaration Slideshow Images
         layout: cards
+        when:
+          delaration-is-slideshow: false
+      declaration-video:
+        type: blocks
+        label: Declaration Video
+        fieldsets:
+          - video
+          - video-file
+        max: 1
+        when:
+          delaration-is-slideshow: true
   
   timeline:
     label: Timeline Content
