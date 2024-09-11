@@ -85,10 +85,10 @@ tabs:
   timeline:
     label: Timeline Content
     sections:
-      items:
+      timeline-items:
         type: pages
         template: timeline-item
-      content:
+      timeline-content:
         type: fields
         fields:
           initial:

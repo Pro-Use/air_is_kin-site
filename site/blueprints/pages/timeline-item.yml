@@ -7,7 +7,7 @@ fields:
   date:
     type: date
   
-  content:
+  item_content:
     type: blocks
     label: Timeline Item Content
     fieldsets:
