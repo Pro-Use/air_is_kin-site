@@ -6,7 +6,7 @@ fields:
     label: Item Title
   date:
     type: date
-  
+  item_index: fields/region-index
   item_content:
     type: blocks
     label: Timeline Item Content
