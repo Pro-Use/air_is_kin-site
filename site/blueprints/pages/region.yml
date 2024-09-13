@@ -15,7 +15,7 @@ tabs:
         type: files
         multiple: false
         layout: cards
-      index: fields/region-index
+      region_index: fields/region-index
 
   intro:
     label: Region Intro Content

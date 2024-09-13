@@ -1,12 +1,13 @@
 label: Region Index
-type: select
+type: color
+mode: options
 options:
-  1: 'x1 y1'
-  2: 'x1 y2'
-  3: 'x1 y3'
-  4: 'x2 y1'
-  5: 'x2 y2'
-  6: 'x2 y3'
-  7: 'x3 y1'
-  8: 'x3 y2'
-  9: 'x3 y3'
+  "#D3D3D3": "x1 y1"
+  "#CBA0C3": "x2 y1"
+  "#AD5B9C": "x3 y1"
+  "#9CCFCF": "x1 y2"
+  "#969DBF": "x2 y2"
+  "#80599A": "x3 y2"
+  "#52B6B6": "x1 y3"
+  "#4F8AA8": "x2 y3"
+  "#434E87": "x3 y3"
