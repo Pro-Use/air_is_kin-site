@@ -44,35 +44,35 @@ tabs:
   declaration:
     label: Declaration Content
     fields:
-      declaration-portrait:
+      declaration_portrait:
         type: files
         multiple: false
         label: Declaration Headshot Image
-      declaration-title:
+      declaration_title:
         type: text
         label: Declaration Title
-      declaration-text:
+      declaration_text:
         type: text
         label: Declaration Name
-      delaration-is-slideshow:
+      delaration_is_slideshow:
         type: toggle
         label: Delaration Type
         text:
           - Slideshow
           - Video
-      declaration-audio:
+      declaration_audio:
         type: files
         multiple: false
         label: Declaration Audio File
         when:
-          delaration-is-slideshow: false
-      declaration-images:
+          delaration_is_slideshow: false
+      declaration_images:
         type: files
         label: Declaration Slideshow Images
         layout: cards
         when:
-          delaration-is-slideshow: false
-      declaration-video:
+          delaration_is_slideshow: false
+      declaration_video:
         type: blocks
         label: Declaration Video
         fieldsets:
@@ -80,7 +80,7 @@ tabs:
           - video-file
         max: 1
         when:
-          delaration-is-slideshow: true
+          delaration_is_slideshow: true
   
   timeline:
     label: Timeline Content
