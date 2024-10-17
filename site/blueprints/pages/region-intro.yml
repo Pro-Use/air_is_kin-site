@@ -1,0 +1,15 @@
+title: Global Region Intro Content
+
+fields:
+  headline_title:
+    label: Headline Title
+    type: text
+  headline_text:
+    label: Headline Text
+    type: writer
+  detail_items:
+    label: Expandable context
+    type: blocks
+    fieldsets:
+      - intro-detail
+  

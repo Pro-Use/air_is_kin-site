@@ -1,0 +1,13 @@
+name: Region Intro Detail
+icon: expand
+label: "{{ detail_title }} | Headline: {{in_headline}}"
+fields:
+  button_text:
+    type: text
+  detail_title:
+    type: text
+  detail_text:
+    type: writer
+  in_headline:
+    label: Is detail part of the headline?
+    type: toggle
