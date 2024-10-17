@@ -24,9 +24,13 @@ tabs:
         width: 1/2
         fields:
           map:
-            type: text
-            label: Map Embed Code
-            icon: code
+            type: files
+            label: Map Image
+            multiple: false
+            uploads: map-image
+            # type: text
+            # label: Map Embed Code
+            # icon: code
       right:
         width: 1/2
         fields:

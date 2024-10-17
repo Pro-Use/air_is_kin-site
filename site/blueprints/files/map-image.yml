@@ -1,0 +1,7 @@
+title: Map Image
+
+accept:
+  mime: image/*
+  type: image
+create:
+  format: webp
