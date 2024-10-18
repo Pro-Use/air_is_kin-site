@@ -27,5 +27,13 @@ return [
       'default' => [320, 640, 720, 800, 960, 1024],
       'large' => [320, 640, 800, 1024, 1600, 2048]
     ],
+  ],
+  'blocksResolver' => [
+      'resolvers' => [
+          // Resolve the KirbyText of the field `text` of the `note` block
+          'audio:soundfile' => function (Field $field, Block $block) {
+              return $field->toFile();
+          }
+      ]
   ]
 ];
