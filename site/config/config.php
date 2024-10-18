@@ -29,11 +29,10 @@ return [
     ],
   ],
   'blocksResolver' => [
-      'resolvers' => [
-          // Resolve the KirbyText of the field `text` of the `note` block
-          'audio:soundfile' => function (Field $field, Block $block) {
-              return $field->toFile();
-          }
-      ]
-  ]
+        // Define which fields of which blocks should be resolved
+        'files' => [
+            // Resolve the `image` field in the `intro` block as a file
+            'audio' => ['soundfile']
+        ],
+    ]
 ];
